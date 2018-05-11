@@ -2,7 +2,7 @@ Add your answers to the Algorithms exercises here.
 
 a. O(n^3)
 b. O(n)
-c. ?
+c. O(sqrt(n))
 d. O(n^2/2) = O(n^2)
 e. O(n^3) 
 f. O(n)
