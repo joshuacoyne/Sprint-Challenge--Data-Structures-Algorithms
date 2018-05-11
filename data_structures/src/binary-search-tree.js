@@ -1,6 +1,13 @@
 const checkBalanced = (rootNode) => {
   /* Your code here */
+  if (rootNode.right && rootNode.left)
+    if(checkBalanced(rootNode.right) * checkBalanced(rootNode.left))
+      return true;
 
+  if (!rootNode.right && !rootNode.left)
+    return true;
+
+  return false;
 };
 
 class BinarySearchTree {

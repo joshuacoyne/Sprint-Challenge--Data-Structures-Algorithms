@@ -1,5 +1,13 @@
 const heapsort = (arr) => {
   /* Your code here */
+  const heapy = new Heap();
+  arr.forEach(n => heapy.insert(n));
+  let ans = new Array(arr.length);
+
+  while(heapy.size > 0) {
+    ans[heapy.size] = heapy.delete();
+  }
+  return (ans);
   
 };
 
