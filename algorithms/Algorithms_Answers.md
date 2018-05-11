@@ -9,9 +9,16 @@ f. O(n)
 g. O(n)
 
 2.
-a. for (let i = 0; i < a.length; i ++;)
-    if (a[j] - a[i] > ans)
-        ans = a[j] - a[i]
+a. function maxDifference(arr) {
+  let minVal = arr[0];
+  let maxDiff = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    minVal = Math.min(minVal, arr[i]);
+    maxDiff = Math.max(maxDiff, arr[i] - minVal);
+  }
+  return maxDiff;
+}
 
 b. Do a binary sort. Go to the middle floor (n/2) and drop an egg. If it breaks halve the floors again(go to floor n / 4). If it doesnt break go up half the remaining floors (floor (n - n/2)/2) and repeat until you find f.
 
