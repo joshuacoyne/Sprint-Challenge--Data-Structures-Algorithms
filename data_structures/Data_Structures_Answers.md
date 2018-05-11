@@ -21,7 +21,7 @@ For each of the methods associated with each data structure, classify it based o
 
 3. What is the runtime complexity of `isEmpty`? O(1)
 
-4. What is the runtime complexity of `length`? O(n)
+4. What is the runtime complexity of `length`? O(1)
 
 
 ## Doubly Linked List
@@ -54,15 +54,15 @@ For each of the methods associated with each data structure, classify it based o
 ## Binary Search Tree
 
 1. What is the runtime complexity of `insert`? 
-    O(n log n)
+    O(log n)
 2. What is the runtime complexity of `contains`?
-    O(n log n)
+    O(log n)
 3. What is the runtime complexity of `getMax`? 
-    O(1)
+    O(n log n)
 4. What is the runtime complexity of `depthFirstForEach`?
-    O(n)
+    O(n log n)
 5. What is the runtime complexity of `breadthFirstForEach`?
-    O(n)
+    O(n log n)
 6. [Stretch Question] What is the runtime complexity of your `checkBalanced` function?
 
 ## Heap
@@ -72,12 +72,12 @@ For each of the methods associated with each data structure, classify it based o
 2. What is the space complexity of the `heapsort` function? Recall that your implementation should return a new array with the sorted data. What would be the space complexity if your function instead altered the input array?
     2n and n
 3. What is the runtime complexity of `bubbleUp`?
-    O(n log n)
+    O(log n)
 4. What is the runtime complexity of `siftDown`?
-    O(n log n)
+    O(log n)
 5. What is the runtime complexity of `insert`?
-    O(n log n)
+    O(log n)
 6. What is the runtime complexity of `delete`?
-    O(n log n)
+    O(log n)
 7. What is the runtime complexity of `getMax`?
     O(1)
